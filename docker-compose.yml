@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  atc:
+    build: .
+    volumes:
+      - .:/app
+    command: bash -c "pip install -r requirements.txt && pytest"
